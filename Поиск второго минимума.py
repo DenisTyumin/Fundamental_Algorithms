@@ -1,10 +1,14 @@
-array = [1, 1, 3, 4]
-min = array[0]
+# Не работает с массивами из одинаковых элементов
+array = [2, 1, 1, 2, 3 ,5]
+min_1 = array[0]
 min_2 = array[1]
 for i in array:
-    if i < min:
-        min_2 = min
-        min = i   
-    elif  i < min_2 and i > min and min != min_2:
+    if i < min_1:
+        min_2 = min_1
+        min_1 = i 
+    elif min_1 == min_2 != i:
         min_2 = i
-print(min, min_2)
+    else:
+        if min_1 > i < min_2:
+            min_2 = i
+print(min_1, min_2)
