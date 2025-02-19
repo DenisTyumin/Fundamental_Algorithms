@@ -11,4 +11,6 @@ for i in array:
     else:
         if min_1 > i < min_2:
             min_2 = i
+if min_1 == min_2:
+    print(f'Массив состоит из одинаковых элементов')
 print(min_1, min_2)
