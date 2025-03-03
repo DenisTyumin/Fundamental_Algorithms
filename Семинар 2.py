@@ -1,4 +1,4 @@
-import timeit, random
+import timeit
 
 arr = [2, 3, 4, 10, 40]
 x = 40
